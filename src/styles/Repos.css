@@ -1,0 +1,30 @@
+html {box-sizing: border-box;}
+*, *:before, *:after {box-sizing: inherit;}
+
+.reposContainer {
+    font-family: "Helvetica", sans-serif;
+}
+
+.reposContainer ul {
+    list-style: none;
+}
+
+.reposContainer ul li {
+    padding: 5px;
+    width: 500px;
+}
+
+.reposContainer a {
+    color: blue;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.reposContainer a:hover {
+    text-decoration: underline;
+}
+
+.lang {
+    border-bottom: 1px solid grey;
+}

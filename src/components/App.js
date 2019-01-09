@@ -1,11 +1,18 @@
 import React, { Component } from 'react'
+import { Provider } from 'react-redux'
+import store from '../store'
+import Home from './Home'
 
 class App extends Component {
   render() {
     return (
-      <h1>Yep</h1>
+      <Provider store = {store}>
+        <div>
+          <Home />
+        </div>
+      </Provider>
     )
   }
 }
 
-export default App;
+export default App
