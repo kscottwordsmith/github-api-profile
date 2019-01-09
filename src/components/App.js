@@ -6,6 +6,7 @@ import Home from './Home'
 class App extends Component {
   render() {
     return (
+      //exists purely to set up the Provider and load the Home component
       <Provider store = {store}>
         <div>
           <Home />

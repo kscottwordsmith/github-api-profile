@@ -5,11 +5,13 @@ import '../styles/Profile.css'
 
 class Profile extends Component {
     componentDidMount() {
+        //gets the profile information once it mounts
         getProfile()
     }
 
     render(){
         return (
+            //renders the profile out
             <div className="profileContainer">
                 <ul>
                     <a href={this.props.profile.html_url}><img src={this.props.profile.avatar_url} alt="Kevin Smith" /></a>
@@ -25,9 +27,11 @@ class Profile extends Component {
 }
 
 function mapStateToProps(appState) {
+    //once the profile is added to the store or updated, update it here
     return {
         profile: appState.profileReducer.profile
     }
 }
 
+//connect mapStateToProps and Profile together, acting similarly to subscribing
 export default connect(mapStateToProps)(Profile)
